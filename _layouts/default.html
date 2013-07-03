@@ -1,46 +1,96 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> 	
+<html lang="en"> 
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />	<!-- Force Latest IE rendering engine -->
+    <title>{{ page.title }}</title>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-9939782-5']);
+      _gaq.push(['_trackPageview']);
 
-    </head>
-    <body>
+      (function() {
+        var ga = document.createElement('script'); ga.type =
+          'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ?
+                  'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
 
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'> 
+<!--     <link href="http://feeds.feedburner.com/sirupsen" rel="alternate" title="Sirupsen" type="application/atom+xml" /> 
+ -->    <link rel="shortcut icon" href="/static/images/favicon.jpg" />
 
-                {{ content }}
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
 
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
+    <link rel="stylesheet" href="/static/css/style.css">
 
-    </body>
-</html>
+    <!--
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/css/skeleton.css">
+    <link rel="stylesheet" href="/static/css/layout.css">
+    -->
+
+    <!--[if IE 7]>
+      <script src="/static/css/font-awesome-ie7.css"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">	
+      <div id='mobile' class='two columns hidden'>
+        <ul>
+          <li><a href='/'>jiusi</a></li>
+          <li><span class="gray"> jiusi liu</span></li>
+          <li><a href="mailto:jiu694@gmail.com">jiu694@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="four columns sidebar">
+        <section>
+          <a id="avatar" href="/"></a>
+
+          <ul id="social">
+            <li>
+              <a href="mailto:jiu694@gmail.com?subject=hi" id="sidebar-email" class="icon-envelope-alt" title="Say hi" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Email']);"></a>
+            </li>
+
+           <!--  <li>
+              <a href="http://www.linkedin.com/in/sirupsen" id="sidebar-linkedin" class="icon-linkedin-sign" style="font-size: 25px;" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'LinkedIn']);"></a>
+            </li> -->
+
+           <!--  <li>
+              <a href="http://twitter.com/Sirupsen" id="sidebar-twitter" class="icon-twitter" title="You should follow me" style="font-size: 28px;" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Twitter']);"></a>
+            </li> -->
+
+            <li>
+              <a href="http://github.com/hihell" id="sidebar-github" class="icon-github" title="I share and fork code here" onClick="_gaq.push(['_trackEvent', 'Social Icons', 'Click', 'Github']);"></a>
+            </li>
+          </ul>
+
+          <ul id="me">
+            <li>jiusi liu</li>
+            <li class="gray">developer</li>
+          </ul>
+
+        </section>
+      </div>
+
+      {{ content }}
+    </div>
+  </body>
+</html> 
