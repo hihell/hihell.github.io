@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lolita"
+title:  "lolita"
 date:   2013-08-06 23:31:51
 categories: drawing
 ---
