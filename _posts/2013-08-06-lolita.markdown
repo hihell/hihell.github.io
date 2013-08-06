@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Lolita"
+date:   2013-08-06 23:31:51
+categories: drawing
+---
+
+#the lolita
+[loli][1]
+
+有时间看看能不能编成个故事
+
+[1]: /static/images/drawing/lolita-frame.png
