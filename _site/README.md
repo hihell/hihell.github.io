@@ -1,6 +1,6 @@
-# Sirupsen.com
+# hihell
 
-My personal website and blog. I [blogged about it](http://sirupsen.com/the-switch-to-github-pages/).
+My personal website and blog. Mainly discuss algorithm and other coding things, you may find some drawing as well.
 
 ## License
 

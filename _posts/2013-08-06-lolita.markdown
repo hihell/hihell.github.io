@@ -5,7 +5,7 @@ date:   2013-08-06 23:31:51
 categories: drawing
 ---
 
-<img src="/static/images/drawings/lolita-frame.png" alt="Drawing" style="width: 600px;"/>
+<img src="/static/images/drawings/lolita-frame.png" style="max-width:500px; height:auto; max-height:600px;"/>
 
 有时间看看能不能编成个故事
 
